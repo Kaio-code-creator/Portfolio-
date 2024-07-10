@@ -413,6 +413,7 @@
   .contact-info {
     max-width: calc(100% - 46px);
     width: calc(100% - 46px);
+    color: #fff;
   }
   
   .contact-title {
