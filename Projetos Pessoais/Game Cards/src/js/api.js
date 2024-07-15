@@ -1,4 +1,6 @@
-import {api_key} from '../keys/key';
+import { getConquestsList } from './conquest.js';
+
+import {api_key} from '../keys/key.js';
 
 const API_KEY = `${api_key}`;
 
@@ -39,6 +41,7 @@ export async function getConquests(){
     try{
         const request = await fetch(`https://api.rawg.io/api/games/4200/achievements?key=${API_KEY}`);
         const response = await request.json();
+        getConquestsList(response)
         return response;
     }catch(error){
         throw new Error(error);
