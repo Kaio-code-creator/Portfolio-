@@ -23,5 +23,5 @@ export function getConquestsList(response) {
         achievementsDescription.classList.add('achievementsDescription');
         achievementsCard.append(achievementsDescription);
         achievementsDescription.textContent = response.results[i].description;
-    }
+    };
 }

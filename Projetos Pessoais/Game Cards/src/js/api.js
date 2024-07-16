@@ -1,4 +1,5 @@
 import { getConquestsList } from './conquest.js';
+import { getPlatformList } from './platforms.js';
 
 import {api_key} from '../keys/key.js';
 
@@ -31,6 +32,7 @@ export async function getAllPlatforms(){
     try{
         const request = await fetch(`https://api.rawg.io/api/platforms?key=${API_KEY}`);
         const response = await request.json();
+        getPlatformList(response);
         return response;
     }catch(error){
         throw new Error(error);
