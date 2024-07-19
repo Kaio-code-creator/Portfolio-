@@ -1,0 +1,62 @@
+/*Página de login */
+
+body {
+    background-image: url('../img/Gamer.jpg');
+
+}
+
+#section-login {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10x;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#section-login h1 {
+    text-align: center;
+} 
+
+#section-login input {
+    width: 100%;
+}
+
+#section-cadastro {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    border-radius: 10x;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#form-cadastrar {
+    padding: 50px;
+    display: none;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+}
+
+#voltar-topo {
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+}
+
+i {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    line-height: 20px;
+    color: #FFF;
+    margin: 0 5px;
+    cursor: pointer;
+}
