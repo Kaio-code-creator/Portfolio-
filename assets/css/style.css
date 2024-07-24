@@ -1310,12 +1310,16 @@
       max-height: 180px;
       margin-bottom: 30px;
     }
-  
+
+    #Kaio {
+      width: 150px;
+      margin-right: 7px;
+      margin-bottom: 5px;
+    }
+   
     .sidebar.active { max-height: 584px; }
   
     .sidebar-info { gap: 25px; }
-  
-    .avatar-box { border-radius: 30px; }
   
     .avatar-box img { width: 120px; }
   
