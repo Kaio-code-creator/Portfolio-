@@ -1,0 +1,66 @@
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.light-theme .container {
+    background-color: white;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .container {
+    background-color: #444;
+}
+
+body.dark-theme h1 {
+    color: #fff;
+}
+
+body.dark-theme label {
+    color: #ccc;
+}
+
+body.dark-theme input,
+body.dark-theme select {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+body.dark-theme button {
+    background-color: #6c757d;
+}
+
+body.dark-theme p#result {
+    color: #fff;
+}
+
+/* Estilos atualizados para o botão de alternância de tema */
+#themeToggle {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 1000; /* Garantir que o botão fique acima de outros elementos */
+    transition: background-color 0.3s;
+}
+
+body.dark-theme #themeToggle {
+    background-color: #495057;
+}
+
+#themeToggle:hover {
+    background-color: #0056b3;
+}
