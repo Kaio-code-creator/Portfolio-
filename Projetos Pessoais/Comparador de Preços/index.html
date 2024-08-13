@@ -11,19 +11,21 @@
 <body class="light-theme">
     <div class="container">
         <button id="themeToggle" onclick="toggleTheme()">Tema Escuro</button>
-        <h1>Comparador de Preços por Medida</h1>
-        
-        <!-- Produto 1 -->
+        <h1>Comparador de Preços</h1>
+    
+        <!-- Preço do Produto 1 -->
+        <p>Preço do Produto 1:</p>
         <div class="input-group">
-            <label for="price1">Preço do Produto 1:</label>
             <input type="number" id="price1" placeholder="Ex: 10.00">
             <select id="priceUnit1">
                 <option value="reais">Reais</option>
                 <option value="centavos">Centavos</option>
             </select>
         </div>
+    
+        <!-- Medida do Produto 1 -->
+        <p>Medida do Produto 1:</p>
         <div class="input-group">
-            <label for="measure1">Medida do Produto 1:</label>
             <input type="number" id="measure1" placeholder="Ex: 500">
             <select id="measureUnit1">
                 <option value="gramas">Gramas</option>
@@ -32,19 +34,21 @@
                 <option value="mililitros">Mililitros</option>
             </select>
         </div>
-        
-        <!-- Produto 2 -->
+    
+        <!-- Preço do Produto 2 -->
+        <p>Preço do Produto 2:</p>
         <div class="input-group">
-            <label for="price2">Preço do Produto 2:</label>
-            <input type="number" id="price2" placeholder="Ex: 8.00">
+            <input type="number" id="price2" placeholder="Ex: 12.00">
             <select id="priceUnit2">
                 <option value="reais">Reais</option>
                 <option value="centavos">Centavos</option>
             </select>
         </div>
+    
+        <!-- Medida do Produto 2 -->
+        <p>Medida do Produto 2:</p>
         <div class="input-group">
-            <label for="measure2">Medida do Produto 2:</label>
-            <input type="number" id="measure2" placeholder="Ex: 400">
+            <input type="number" id="measure2" placeholder="Ex: 1000">
             <select id="measureUnit2">
                 <option value="gramas">Gramas</option>
                 <option value="quilogramas">Quilogramas</option>
@@ -52,7 +56,7 @@
                 <option value="mililitros">Mililitros</option>
             </select>
         </div>
-        
+    
         <button onclick="comparePrices()">Comparar</button>
         <p id="result"></p>
     </div>

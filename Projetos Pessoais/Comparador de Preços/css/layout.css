@@ -10,3 +10,32 @@ body {
     width: 100%;
 }
 
+
+/* Alinhar input e select na mesma linha */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    flex-grow: 2;
+    margin-right: 10px;
+}
+
+.input-group select {
+    flex-grow: 1;
+    min-width: 80px;
+}
+
+/* Adiciona espaçamento entre os parágrafos */
+.container p {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
