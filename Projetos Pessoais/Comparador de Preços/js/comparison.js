@@ -1,13 +1,13 @@
 function comparePrices() {
     // Produto 1
-    let price1 = parseFloat(document.getElementById('price1').value);
-    let measure1 = parseFloat(document.getElementById('measure1').value);
+    let price1 = parseFloat(document.getElementById('price1').value.replace(',', '.'));
+    let measure1 = parseFloat(document.getElementById('measure1').value.replace(',', '.'));
     const priceUnit1 = document.getElementById('priceUnit1').value;
     const measureUnit1 = document.getElementById('measureUnit1').value;
 
     // Produto 2
-    let price2 = parseFloat(document.getElementById('price2').value);
-    let measure2 = parseFloat(document.getElementById('measure2').value);
+    let price2 = parseFloat(document.getElementById('price2').value.replace(',', '.'));
+    let measure2 = parseFloat(document.getElementById('measure2').value.replace(',', '.'));
     const priceUnit2 = document.getElementById('priceUnit2').value;
     const measureUnit2 = document.getElementById('measureUnit2').value;
 

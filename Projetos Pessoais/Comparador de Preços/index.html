@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
+
 <body class="light-theme">
+    <button id="themeToggle" onclick="toggleTheme()">Tema Escuro</button>
     <div class="container">
-        <button id="themeToggle" onclick="toggleTheme()">Tema Escuro</button>
         <h1>Comparador de Preços</h1>
     
         <!-- Preço do Produto 1 -->
         <p>Preço do Produto 1:</p>
         <div class="input-group">
-            <input type="number" id="price1" placeholder="Ex: 10.00">
+            <input type="text" id="price1" placeholder="Ex: 10.00">
             <select id="priceUnit1">
                 <option value="reais">Reais</option>
                 <option value="centavos">Centavos</option>
@@ -26,7 +27,7 @@
         <!-- Medida do Produto 1 -->
         <p>Medida do Produto 1:</p>
         <div class="input-group">
-            <input type="number" id="measure1" placeholder="Ex: 500">
+            <input type="text" id="measure1" placeholder="Ex: 500">
             <select id="measureUnit1">
                 <option value="gramas">Gramas</option>
                 <option value="quilogramas">Quilogramas</option>
@@ -38,7 +39,7 @@
         <!-- Preço do Produto 2 -->
         <p>Preço do Produto 2:</p>
         <div class="input-group">
-            <input type="number" id="price2" placeholder="Ex: 12.00">
+            <input type="text" id="price2" placeholder="Ex: 12.00">
             <select id="priceUnit2">
                 <option value="reais">Reais</option>
                 <option value="centavos">Centavos</option>
@@ -48,7 +49,7 @@
         <!-- Medida do Produto 2 -->
         <p>Medida do Produto 2:</p>
         <div class="input-group">
-            <input type="number" id="measure2" placeholder="Ex: 1000">
+            <input type="text" id="measure2" placeholder="Ex: 1000">
             <select id="measureUnit2">
                 <option value="gramas">Gramas</option>
                 <option value="quilogramas">Quilogramas</option>
@@ -59,7 +60,8 @@
     
         <button onclick="comparePrices()">Comparar</button>
         <p id="result"></p>
-    </div>
+    </div>    
+    
     <script src="js/validation.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/conversion.js"></script>
